@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon.png" type="png">
+    <link rel="stylesheet" href="call.css">
+    <title>Contacts</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <img src="./assets/logo.png" alt="YOUR BLOG"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="serv.html">Bloggs</a></li>
+                    <li><a href="call.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="contact">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e67459c0-ab24-4883-b21a-2d85fe8d0f12">
+                    <label for="name">NAME: </label>
+                    <input type="text" name="name" placeholder="your name.." required>
+                    <label for="email">EMAIL: </label>
+                    <input type="email" name="email" placeholder="email.." required>
+                    <label for="message">MESSAGE: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="enter your message here.."></textarea>
+                    <div class="btn">
+                        <button>
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Send</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+    </main>
+    <footer>
+        <div class="credits">
+            <p>Copyright &copy; 2024 Rishabh Mishra</p>
+        </div>
+    </footer>
+</body>
+
+</html>

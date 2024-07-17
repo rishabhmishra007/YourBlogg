@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #191a1a;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 15px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    color: #fff;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 6px 8px #191a1a;
+    top: 1px;
+    position: fixed;
+}
+
+.logo {
+    margin-left: -70px;
+    margin-top: 6px;
+    width: 100px;
+    height: 70px;
+    filter: invert(1);
+    /* background-color: aqua; */
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+}
+
+.menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    list-style: none;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu ul li a:hover {
+    color: #666060;
+    transition: .5s;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main .container {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .contact {
+    height: 60vh;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.50rem white);
+    border-color: transparent;
+}
+
+main .container .contact form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+form label {
+    font-size: large;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+form input {
+    border: none;
+    width: 38vw;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+form textarea{
+    border: none;
+    width: 38vw;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btn button:hover span {
+    transform: translateX(5em);
+}
+
+.btn button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+
+
+.credits {
+    font-size: 12px;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+}
